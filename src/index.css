@@ -1,0 +1,104 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+* {
+  font-family: "Inter", sans-serif;
+
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ced4da !important;
+}
+
+.step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #2486e9; /* gray */
+  color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-circle.active {
+  background: #36be1b; /* bootstrap green */
+}
+
+.step-circle.completed {
+  background: #2486e9;
+}
+/* .mobile-step-line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #dee2e6;
+  margin: 0 8px;
+}
+
+
+.mobile-step-line.completed {
+  background-color: #198754; 
+} */
+
+
+@media (max-width: 991.98px) {
+  /* lg breakpoint and below */
+  .text-center-lg-down {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .goal-item {
+    width: calc(50% - 10px) !important; /* 2 items per row with some gap */
+  }
+}
+
+.d-grid {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+@media (max-width: 991.98px) {
+  /* lg down */
+  .d-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* sm and below */
+  .d-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Large screens: 3 cards per row (handled by inline style maxWidth calc(33% - 1rem)) */
+
+/* Medium screens: 2 cards per row */
+@media (max-width: 991.98px) {
+  .card-item {
+    max-width: calc(50% - 1rem) !important;
+  }
+}
+
+/* Small screens: 1 card per row */
+@media (max-width: 767.98px) {
+  .card-item {
+    max-width: 100% !important;
+  }
+}
