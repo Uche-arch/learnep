@@ -33,7 +33,7 @@ export default function StepOne() {
 
   return (
     <>
-      <h4 className="mb-3 text-dark text-center-lg-down">
+      <h4 className="mb-3 text-dark text-center-lg-down fhead">
         What are your three main goals with Learnep LMS?
       </h4>
       <p className="text-secondary mb-4 text-center-lg-down">
@@ -63,14 +63,14 @@ export default function StepOne() {
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") toggleSelect(index);
               }}
-              className="position-relative border ps-4 py-4 goal-item"
+              className="position-relative border ps-0 ps-lg-4 py-4 goal-item text-center text-lg-start font  "
               style={{
                 width: "calc(33.33% - 13.33px)", // default 3 per row
                 boxSizing: "border-box",
                 cursor: "pointer",
                 userSelect: "none",
                 backgroundColor: isSelected ? "#b5fab5" : "transparent",
-                textAlign: "left",
+                // textAlign: "left",
                 marginBottom: 20,
                 // boxShadow: isSelected ? "0 0 8px 2px #32CD32" : "none",
                 // border: isSelected ? "1px solid #32CD32" : "none",

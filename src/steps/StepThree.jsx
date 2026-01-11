@@ -30,7 +30,7 @@ export default function StepThree() {
 
   return (
     <>
-      <h3 className="mb-4 text-center-lg-down">
+      <h3 className="mb-4 text-center-lg-down fhead">
         What is the name of your organization?
       </h3>
       <input

@@ -24,7 +24,7 @@ export default function StepFour() {
 
   return (
     <>
-      <h2 className="mb-2 text-center-lg-down">You are Done!</h2>
+      <h2 className="mb-2 text-center-lg-down fhead">You are Done!</h2>
       <p className="mb-4 text-center-lg-down text-secondary">Welcome onboard</p>
 
       <h4 className="mb-3 text-center-lg-down">
@@ -46,7 +46,7 @@ export default function StepFour() {
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") setSelectedCard(idx);
               }}
-              className="card-item border rounded px-2 py-5 text-center"
+              className="card-item border rounded px-2 py-4 py-lg-5 text-center"
               style={{
                 cursor: "pointer",
                 backgroundColor: isSelected ? "#b5fab5" : "transparent",
@@ -67,8 +67,8 @@ export default function StepFour() {
                   color: isSelected ? "#19c027" : "#6c757d",
                 }}
               />
-              <h5>{card.header}</h5>
-              <p className="mb-0 text-secondary">{card.text}</p>
+              <h6>{card.header}</h6>
+              <p className="mb-0 text-secondary font">{card.text}</p>
             </div>
           );
         })}
@@ -83,13 +83,13 @@ export default function StepFour() {
           <i className="bi bi-info-circle-fill"></i>
         </div>
         <div>
-          <h5>Let's walk you through your portal</h5>
-          <p className="mb-0 text-secondary">
+          <h6 className=" my-0">Let's walk you through your portal</h6>
+          <small className="my-0 text-secondary">
             Navigate your portal seamlessly with the help of our,{" "}
             <span className="text-success text-decoration-underline" style={{cursor: "pointer"}}>
               Learnep Wizard
             </span>
-          </p>
+          </small>
         </div>
       </div>
     </>

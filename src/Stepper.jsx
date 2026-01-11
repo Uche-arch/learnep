@@ -4,10 +4,20 @@ import StepTwo from "./steps/StepTwo";
 import StepThree from "./steps/StepThree";
 import StepFour from "./steps/StepFour";
 
-const steps = ["Priority with Learnep", "Account Info", "Organization Details", "Completed"];
-const steptext = ["Select your 3 main goals", "Setup your account info", "Tell us about your company", "Your account is created"];
+const steps = [
+  "Priority with Learnep",
+  "Account Info",
+  "Organization Details",
+  "Completed",
+];
+const steptext = [
+  "Select your 3 main goals",
+  "Setup your account info",
+  "Tell us about your company",
+  "Your account is created",
+];
 
-export default function Stepper() { 
+export default function Stepper() {
   const [currentStep, setCurrentStep] = useState(1);
 
   return (
@@ -89,7 +99,10 @@ export default function Stepper() {
             </div>
 
             {/* ================= STEP CONTENT ================= */}
-            <div className="step-container d-flex flex-column align-items-center pb-3 pt-4">
+            <div
+              className="step-container d-flex flex-column align-items-center pb-3"
+              style={{ paddingTop: "80px" }}
+            >
               {/* STEPS */}
               <div className="d-flex align-items-center justify-content-center w-100 px-4 mb-4">
                 {steps.map((_, index) => {

@@ -61,6 +61,12 @@ select:focus {
   .text-center-lg-down {
     text-align: center !important;
   }
+  .font {
+    font-size: 15px;
+  }
+  .fhead {
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 575.98px) {

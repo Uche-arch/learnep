@@ -25,13 +25,13 @@ export default function StepTwo() {
 
   return (
     <>
-      <h3 className="mb-4 text-center-lg-down">
+      <h3 className="mb-4 text-center-lg-down fhead">
         How many users will be onboarded on your portal?
       </h3>
 
       {/* Buttons grid */}
       <div
-        className="d-grid gap-3 mb-5 mx-auto mx-lg-0"
+        className="d-grid gap-3 mb-5 mx-auto mx-lg-0 font"
         style={{
           gridTemplateColumns: "repeat(4, 1fr)",
           // marginBottom: "3rem",
